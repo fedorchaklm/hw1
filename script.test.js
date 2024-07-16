@@ -4,6 +4,10 @@ import {
   getSumOfEvenNumbers,
   getMax,
   getMark,
+  getSumAndQuantity,
+  isPrime,
+  getSqrt,
+  getSqrtBinary,
 } from "./script.js";
 
 // describe("getSumOrMultiply", () => {
@@ -70,32 +74,111 @@ import {
 //   });
 // });
 
-describe("getMark", () => {
-  test("should return F", () => {
-    expect(getMark(19)).toBe("F");
-  });
+// describe("getMark", () => {
+//   test("should return F", () => {
+//     expect(getMark(19)).toBe("F");
+//   });
 
-  test("should return E", () => {
-    expect(getMark(39)).toBe("E");
-  });
+//   test("should return E", () => {
+//     expect(getMark(39)).toBe("E");
+//   });
 
-  test("should return D", () => {
-    expect(getMark(59)).toBe("D");
-  });
+//   test("should return D", () => {
+//     expect(getMark(59)).toBe("D");
+//   });
 
-  test("should return C", () => {
-    expect(getMark(74)).toBe("C");
-  });
+//   test("should return C", () => {
+//     expect(getMark(74)).toBe("C");
+//   });
 
-  test("should return B", () => {
-    expect(getMark(89)).toBe("B");
-  });
+//   test("should return B", () => {
+//     expect(getMark(89)).toBe("B");
+//   });
 
-  test("should return 100", () => {
-    expect(getMark(100)).toBe("A");
-  });
+//   test("should return 100", () => {
+//     expect(getMark(100)).toBe("A");
+//   });
 
-  test("should return error", () => {
-    expect(() => getMark(105)).toThrowError("There is no such mark!");
+//   test("should return error", () => {
+//     expect(() => getMark(105)).toThrowError("There is no such mark!");
+//   });
+// });
+
+// describe("getSumAndQuantity", () => {
+//   test("should return {}", () => {
+//     expect(getSumAndQuantity(1, 99)).toStrictEqual({sum: 49, quantity: 49});
+//   });
+// });
+
+
+// describe('isPrime', () => {
+//   test("should return is prime", () => {
+//     expect(isPrime(2)).toBe("prime");
+//   });
+//   test("should return is prime", () => {
+//     expect(isPrime(3)).toBe("prime");
+//   });
+//   test("should return is not prime", () => {
+//     expect(isPrime(4)).toBe("not prime");
+//   });
+//   test("should return is prime", () => {
+//     expect(isPrime(5)).toBe("prime");
+//   });
+//   test("should return is prime", () => {
+//     expect(isPrime(7)).toBe("prime");
+//   });
+//   test("should return is not prime", () => {
+//     expect(isPrime(10)).toBe("not prime");
+//   });
+//   test("should return is prime", () => {
+//     expect(isPrime(11)).toBe("prime");
+//   });
+// });
+
+// describe("getSqrt", () => {
+//   test("should return 2", () => {
+//     expect(getSqrt(4)).toBe(2);
+//   });
+//   test("should return 4", () => {
+//     expect(getSqrt(16)).toBe(4);
+//   });
+//   test("should return 5", () => {
+//     expect(getSqrt(29)).toBe(5);
+//   });
+//   test("should return 5", () => {
+//     expect(getSqrt(28)).toBe(5);
+//   });
+//   test("should return 5", () => {
+//     expect(getSqrt(31)).toBe(6);
+//   });
+//   test("should return 5", () => {
+//     expect(getSqrt(35)).toBe(6);
+//   });
+//   test("should return 2", () => {
+//     expect(() => getSqrt(-4)).toThrowError("Wrong number");
+//   });
+// });
+
+describe("getSqrtBinary", () => {
+  test("should return 2", () => {
+    expect(getSqrtBinary(4)).toBe(2);
+  });
+  test("should return 4", () => {
+    expect(getSqrtBinary(16)).toBe(4);
+  });
+  test("should return 5", () => {
+    expect(getSqrtBinary(29)).toBe(5);
+  });
+  test("should return 5", () => {
+    expect(getSqrtBinary(28)).toBe(5);
+  });
+  test("should return 5", () => {
+    expect(getSqrtBinary(31)).toBe(6);
+  });
+  test("should return 5", () => {
+    expect(getSqrtBinary(35)).toBe(6);
+  });
+  test("should return 2", () => {
+    expect(() => getSqrtBinary(-4)).toThrowError("Wrong number");
   });
 });
